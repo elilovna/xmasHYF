@@ -1,0 +1,83 @@
+.mainDiv {
+  margin: 15% 30px;
+  width: 60%;
+}
+
+.txt {
+  margin-top: 5%;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  color: transparent;
+  background: linear-gradient(90deg, rgb(230, 219, 219), rgb(253, 185, 82), rgb(82, 253, 239), rgb(255, 60, 60), rgb(94, 24, 206), rgb(255, 173, 251));
+  background-repeat: repeat;
+  background-size: 200%;
+  animation: shine 10s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: none;
+}
+
+.btnLetsGo {
+  margin: 0vh 35vh;
+  display: inline-block;
+  position: relative;
+  top: 10vh;
+  box-sizing: border-box;
+  height: 4vh;
+  border-radius: 22px;
+  padding: 5px 10px;
+  background-color: rgba(238, 234, 234, 0.842);
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 2vh;
+  text-transform: uppercase;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 500%;
+  }
+  100% {
+    background-position: -500%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainDiv {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .txt {
+    font-family: sans-serif;
+    font-size: 1em;
+    color:white;
+    background: none;
+  }
+
+  .btnLetsGo {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .mainDiv {
+    margin: 25% 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .txt {
+    font-family: sans-serif;
+    font-size: 1em;
+    color:white;
+    background: none;
+  }
+
+  .btnLetsGo {
+    margin: auto;
+    display: block;
+  }
+}

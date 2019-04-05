@@ -1,0 +1,38 @@
+.randomContainer {
+    display: block;
+    margin-left: 2%;
+    margin-top: 13%;
+    font-family: 'Mountains of Christmas', cursive;
+    text-transform: uppercase;
+    font-size: 4vh;
+    color:white;
+    display: flex;
+}
+
+.randomContainer div {
+    width:50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .randomContainer {
+      margin: 10px;
+      text-align: center;
+      font-size: 1.5em;
+    } 
+    .randomContainer div {
+        width:100%;
+    } 
+  }
+  
+  @media screen and (max-width:1000px) {
+    .randomContainer {
+      margin: 10px;
+      text-align: center;
+      font-size: 1.5em;
+    } 
+
+    .randomContainer div {
+        width:100%;
+    } 
+  }
+  

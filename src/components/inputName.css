@@ -1,0 +1,92 @@
+.container {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userInput {
+    position: absolute;
+    top: 45vh;
+    text-align: center;
+    border: none;
+    outline: none;
+    display: inline-block;
+    height: 3vh;
+    position: relative;
+    border-radius: 22px;
+    width: 50vh;
+    box-sizing: border-box;
+    padding: 18px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 20px;
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+.userInput:hover {
+    height: 5vh;
+    width: 60vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.add-btn {
+    position: absolute;
+    margin: 0 2vh;
+    display: inline-block;
+    position: absolute;
+    top: 45vh;
+    box-sizing: border-box;
+    height: 35px;
+    width: 60px;
+    border-radius: 22px;
+    padding: 5px 10px;
+    background-color: rgba(238, 234, 234, 0.842);
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        text-align: center;
+    }
+    .userInput {
+        width: 45%;
+        text-align: center;
+    }
+    .userInput {
+        width: 51%;
+    }
+
+    .add-btn {
+        height: 30px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .container {
+        position: relative;
+        text-align: center;
+    }
+
+    .userInput {
+        width: 45%;
+        text-align: center;
+    }
+    .userInput:hover {
+        width: 51%;
+    }
+    .add-btn {
+        height: 35px;
+        width: 50px;
+    }
+}
